@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylenewpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn">Click me</button>
+    </div>
+    <script>
+      const button = document.getElementById("btn");
+
+      button.addEventListener("mouseover", function () {
+        button.style.left = `${Math.floor(Math.random() * 95)}%`; // Adjusted for faster movement
+        button.style.top = `${Math.floor(Math.random() * 95)}%`; // Adjusted for faster movement
+      });
+
+      button.addEventListener("click", function () {
+        alert("Congrats meron ka ng wanmilyontawsandalars");
+      });
+    </script>
+  </body>
+</html>

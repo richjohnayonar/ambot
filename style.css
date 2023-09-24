@@ -1,0 +1,78 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,153,186,1) 0%, rgba(30,122,222,1) 48%, rgba(0,212,255,1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgba(155, 167, 236, 0.719);
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 0px 48px 3px rgba(28,50,140,0.54);
+    -webkit-box-shadow: 0px 0px 48px 3px rgba(28,50,140,0.54);
+    -moz-box-shadow: 0px 0px 48px 3px rgba(28,50,140,0.54);
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #0f2027;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #0f2027;
+    background-color: rgb(82, 99, 245);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+}
+
+#form button:hover {
+   opacity: 0.9;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
